@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    /* margin: 2rem;
+    padding: 3rem; */
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+/* .auth-wrapper{
+    display: flex;
+
+    
+
+} */
+/* .auth-wrapper Course{
+    margin-left: 2rem;
+} */

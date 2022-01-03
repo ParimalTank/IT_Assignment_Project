@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <h3>
+        <pre>
+                Encryption and Decryption using SSL/TLS certificate :
+
+                Install the openssl on your machine:
+
+                For Windows:
+                Download openssl for windows https://slproweb.com/products/Win32OpenSSL.html. Install the MSI.
+
+                For MAC:
+                brew update
+                brew install openssl
+                echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+                source ~/.bash_profile
+
+                Create SSL certificate using following command:
+
+                    openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:4096 -keyout private.key -out certificate.crt
+
+                    Extract the public key component from certificate using following command
+
+                    Command to extract pubkey from certificate
+
+                    openssl x509 -noout -pubkey -in certificate.crt -out pub.key
+
+                    Upload the public key to server “Upload Public Key” Button
+
+                    Server has generated the random no. in file and encrypted it with public key provided by you. Server has used following command to encrypt the file
+
+                    openssl rsautl -encrypt -in test.txt -pubin -inkey pub.key -out cipher.txt
+
+                    Encrypted file is sent to you through the mail. Download it and decrypt it using the following command
+
+                    openssl rsautl -decrypt -in cipher.txt -inkey private.key
+
+                    Paste the random no. in the following text box and validate the no.
+
+                You have successfully completed the assignment.
+</pre>
+    </h3>
+</body>
+
+</html>

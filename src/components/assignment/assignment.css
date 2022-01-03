@@ -1,0 +1,18 @@
+.side {
+  box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px,
+    rgb(145 158 171 / 24%) 0px 16px 32px -4px;
+}
+
+.navlink {
+  color: rgb(0, 0, 0);
+  transition: 0.2s ease;
+  border-radius: 1rem;
+
+}
+.navlink:hover{
+  background: #ECF2F9;
+}
+.activeLink .navlink{
+  background: #5EA3A3;
+  color: #fff;
+}

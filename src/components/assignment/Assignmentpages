@@ -1,0 +1,14 @@
+import React, { Component } from "react";
+var __html = require('./assignment1_pages.html.js');
+var template = { __html: __html };
+
+const Assignmentpages = () => {
+    
+        return (
+          <div className="screen-share">
+            <span dangerouslySetInnerHTML={template} />
+          </div>
+        );
+}
+
+export default Assignmentpages;
